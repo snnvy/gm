@@ -935,6 +935,9 @@ margin-bottom: 26px;
 	}
 }
 @media screen and (max-width:518px){
+	.section__two-card-info{
+		padding: 11px;
+	}
 	.section__one-title h1{
 		font-size: 42px;
 	}
