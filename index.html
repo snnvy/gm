@@ -1,404 +1,1123 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="icon.png" type="image/x-icon">
-	<link rel="stylesheet" href="style.css">
-	<title>GRANDMASTER SHOP</title>
-</head>
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
 
-<body>
-	<header class="header" id="header">
-		<div class="container">
-			<div class="header__prescription">
-				<p>Определенно лучшие в сфере предоставления услуг прокачки DOTA 2. Безупречная репутация — это про нас!</p>
-			</div>
-			<div class="header__menu">
-				<div class="header__menu-nav">
-					<img class="header-icon" src="icon.png" alt="icon">
-					<ul class="header_menu-nav-list" id="mySidebar">
-						<a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
-						<li class="header_menu-nav-link"><a href="#catalog" scroll-behavior: smooth>Каталог</a></li>
-						<li class="header_menu-nav-link"><a href="#benefits">Преимущества</a></li>
-						<li class="header_menu-nav-link"><a href="#instruction">Инструкция</a></li>
-						<li class="header_menu-nav-link"><a href="#support2">Поддержка</a></li>
-						<li class="header_menu-nav-link"><a href="#contacts">Контакты</a></li>
-					</ul>
-					
-				</div>
-				<div class="header__menu-btns">
-					<button class="openbtn" id="opennav" ><p>&#9776;  Меню</p></button>
-				<a href="#" class="header__menu-btn hover-btn">
-					<p>К покупкам <img src="bx-cart-alt 1.png" alt="cart"></p>
-				</a>
-				</div>
-				
-			</div>
-		</div>
-	</header>
-	<main id="main">
-		<div class="section__one">
-			<div class="section__one-container">
-				<div class="section__one-content">
-					<div class="section__one-main">
-						<div class="section__one-main-content">
-							<img src="Mask group2.png" alt="icon" class="section__one-icon">
-							<div class="section__one-title">
-								<h1>Добро пожаловать в <span>GRANDMASTER SHOP</span></h1>
-							</div>
-							<p class="section__one-subtitle">
-								В нашем магазине вы можете приобрести услуги прокачки, прохождения и многое другое для комфортной игры в
-								Dota 2!
-							</p>
-							<div class="section__one-btns">
-								<a href="#catalog" class="section__one-btns-assortiment hover-btn">
-									<p>Наш ассортимент</p>
-								</a>
-								<a href="#instruction" class="section__one-btns-instruction">
-									<p>Инструкция <img src="arrowRight.png" alt="arrowRight"></p>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="section__one-info">
-						<div class="section__one-info-sections">
-							<div class="section__one-info-sections-content">
-								<p class="section__one-info-sections-content-subtitle">Положительных отзывов</p>
-								<p class="section__one-info-sections-content-title">250+</p>
-							</div>
-							<div class="section__one-info-sections-content">
-								<p class="section__one-info-sections-content-subtitle">Негативных отзывов</p>
-								<p class="section__one-info-sections-content-title">Ни одного</p>
-							</div>
-							<div class="section__one-info-sections-content">
-								<p class="section__one-info-sections-content-subtitle">Выполнено заказов</p>
-								<p class="section__one-info-sections-content-title">300+</p>
-							</div>
-							<div class="section__one-info-sections-content">
-								<p class="section__one-info-sections-content-subtitle">Продано предметов</p>
-								<p class="section__one-info-sections-content-title">250+</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section__two" id="catalog">
-			<div class="container">
-				<div class="section__two-content">
-					<div class="section__two-title">
-						<h2>Ассортимент товаров</h2>
-					</div>
-					<div class="section__two-cards">
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="1.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПРОКАЧКА ГЕРОЯ ДО 6-ГО УРОВНЯ</h3>
-									<p></p>
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>299₽-890₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="2.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПРОКАЧКА ГЕРОЯ ДО 12-ГО УРОВНЯ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>399₽-1&nbsp;990₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="3.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПРОКАЧКА ГЕРОЯ ДО 18-ГО УРОВНЯ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>499₽-4&nbsp;990₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="4.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПРОКАЧКА ГЕРОЯ ДО 25-ГО УРОВНЯ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>799₽-7&nbsp;990₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="5.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПРОКАЧКА ГЕРОЯ ДО 30-ГО УРОВНЯ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>999₽-11&nbsp;590₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="6.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>СТРИК ПОБЕД НА ГЕРОЕ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>499₽-3&nbsp;990₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="7.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПРОХОЖДЕНИЕ КАТАКОМБ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>399₽-2&nbsp;990₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="8.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПОДНЯТИЕ MMR</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>299₽-3&nbsp;549₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="9.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ПРОКАЧКА АРКАНЫ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>490₽-2&nbsp;990₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="10.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>КАЛИБРОВКА MMR</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>990₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="11.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ТРЕНИРОВКА ПОЗИЦИИ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>399₽</p>
-								</div>
-							</div>
-						</div>
-						<div class="section__two-card">
-							<img class="section__two-card-img" src="12.png" alt="bg">
-							<div class="section__two-card-info">
-								<div class="section__two-card-info-title">
-									<h3>ТРЕНИРОВКА ГЕРОЯ</h3>
-									
-								</div>
-								<div class="section__two-card-info-price">
-									<p>&nbsp;</p>
-									<p>399₽</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section__three" id="benefits">
-			<div class="section__three-container">
-				<div class="section__three-content">
-					<img class="gradientR" src="gradientR.png" alt="gradient">
-					<img class="gradientL" src="gradientL.png" alt="gradient">
-					<h3>№1 НА РЫНКЕ <img class="crown-icon" src="emojiCrown.png" alt="emoji"></h3>
-					<h2>Ряд преимуществ над конкурентами</h2>
-					<div class="slider">
-						<div class="slider__item filter">
-							<div class="slider-content">
-								<div class="section__three-slider-item-text emojiCard">
-									<h5>Безупречная репутация</h5>
-									<h4>Всегда довольные клиенты</h4>
-								</div>
-								<img class="cardImg" src="emojiCard.png" alt="">
-							</div>
-						</div>
-						<div class="slider__item filter">
-							<div class="slider-content">
-								<div class="section__three-slider-item-text payCard">
-									<h5>Множество вариантов</h5>
-									<h4>Оплаты товара</h4>
-								</div>
-								<img class="cardImg" src="payCard.png" alt="">
-							</div>
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
-						</div>
-						<div class="slider__item ">
-							<div class="slider-content">
-								<div class="section__three-slider-item-text feedbackCard">
-									<h5>Прозрачность</h5>
-									<h4>250+ Отзывов</h4>
-									
-									<a href="" class="card-btn"><p> Отзывы VK <img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
-								</div>
-								
-								<img class="cardImg" src="feedbackCard.png" alt="">
-							</div>
-						</div>
-						<div class="slider__item">
-							<div class="slider-content">
-								<div class="section__three-slider-item-text discordCard">
-									<h5>Работаем при вас</h5>
-									<h4>Сервер в Discord</h4>
-									
-									<a href="" class="card-btn"><p> Перейти в  Discord<img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
-								</div>
-								<img class="cardImg" src="discordCard.png" alt="">
-								</div>
-								
-							</div>
-							<div class="slider__item">
-								<div class="slider-content">
-									<div class="section__three-slider-item-text UIXCard">
-										<h5>Удобство</h5>
-										<h4>Понятный UIX</h4>
-									</div>
-									<img class="cardImg" src="UIXCard.png" alt="">
-								</div>
-							</div>
-						</div>
-						
+:focus,
+:active {
+	outline: none;
+}
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section__four" id="instruction">
-			<div class="container">
-				<div class="section__four-content">
-					<div class="section__four-text">
-						<h3>ПРОСТАЯ ИНСТРУКЦИЯ ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА</h3>
-						<div class="section__four-title">
-							<img class="section__four-title-img" src="Q.png" alt="icon"> Как воспользоваться нашими услугами?
-						</div>
-						<ul class="section__four-list">
-							<li class="section__four-list-item"><img src="list1.png" alt="list1">Выберите на нашем сайте нужный
-								Вам товар. </li>
-							<li class="section__four-list-item"><img src="list2.png" alt="list2">Выбираете вашего героя и
-								нынешний уровень.</li>
-							<li class="section__four-list-item"><img src="list3.png" alt="list3">Укажие дополнительную информацию
-								заявки. </li>
-							<li class="section__four-list-item"><img src="list4.png" alt="list4">Отправьте номер заявки по ссылке
-								в поп-окне.</li>
-						</ul>
-						<a class="section__four-btn hover-btn" href="#catalog">
-							<p>Перейти к товарам</p>
-						</a>
-					</div>
-					<div class="section__four-picture">
-						<img class="section__four-img" src="img.png" alt="picture">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section__five" id="support1">
-			<div class="section__five-container">
-				<div class="section__five-content">
-					<div class="section__five-picture">
-						<img class="section__five-img" src="Group.png" alt="image">
-					</div>
-					<div class="section__five-text">
-						<h3>РАСШИРЯЕМСЯ, РАСТЕМ, ОБНОВЛЯЕМСЯ <img src="emoji.png" alt="emoji"></h3>
-						<h2>Постоянное развитие</h2>
-						<p><span> Cледите за</span> пополением товара, акциями, обновлениями и новостями <span>нашего магазина в
-								наших социальных сетях!</span> </p>
-						<div class="section__five-btns">
-							<a href="" class="social-media hover-btn">Перейти в VK</a>
-							<a href="" class="social-media hover-btn">Перейти в Discord</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section__six" id="support2">
-			<div class="section__six-container">
-				<div class="section__six-content">
-					<div class="section__six-text">
-						<h3>ЛУЧШЕЕ ОТНОШЕНИЕ К КЛИЕНТУ<img src="emojiSmile.png" alt="emoji"></h3>
-						<h2>Тех. поддержка 24/7</h2>
-						<p><span> Наша техническая поддержка</span> поможет Вам разобраться с любым вопросом <span>касаемо наших
-								услуг</span>отвечаем моментально! </p>
-						<h4><img src="bx-timer 1.png" alt="icon"> Ответ в течение 15 минут!</h4>
-						<a href="" class="social-media hover-btn social-media-btn">Написать обращение</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="footer" id="contacts">
-		<div class="footer-container">
-			<div class="footer-content">
-				<img class="footer-icon" src="icon.png" alt="icon">
-				<p>©2022 GM Shop, All Rights Reserved.</p>
-				<div class="footer-content-btns">
-					<a href=""><img src="bxl-vk 1.png" alt="vk"></a>
-					<a href=""><img src="bxl-discord-alt 1.png" alt="discord"></a>
-					<a href=""><img src="bxl-telegram 1.png" alt="telegram"></a>
-				</div>
-			</div>
-		</div>
-	</footer>
+a:focus,
+a:active {
+	outline: none;
+}
 
-	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
-	<script src="slick.min.js"></script>
-	<script src="main.js"></script>
-</body>
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
 
-</html>
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #070A11;
+	overflow-x: hidden;
+}
+.section__two-card{
+	transition: 0.6s;
+}
+.section__two-card:hover{
+	transform: scale(1.025);
+	transition: 0.6s;
+}
+.hover-btn:hover{
+	background: linear-gradient(90.08deg, #9554FF 1.65%, #8E35AD 92.63%);
+	outline: 1px solid #ffffff;
+	box-shadow: 0px 4.16667px 4.16667px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(4.16667px);
+}
+.header__prescription {
+	background: linear-gradient(90.08deg, #9554FF 1.65%, #8E35AD 92.63%);
+	text-align: center;
+	padding: 10px 0 10px 0;
+	font-weight: 600;
+	font-size: 14.5833px;
+	line-height: 19px;
+}
+
+.header__menu {
+	background: rgba(13, 12, 15, 0.4);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 73px;
+	max-width: 1153px;
+	margin: auto;
+	/* margin-left: 190px;
+	margin-right: 190px; */
+}
+
+.header__menu-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 615px;
+}
+
+.header_menu-nav-list {
+	width: 524px;
+	display: flex;
+	justify-content: space-between;
+}
+.header_menu-nav-link{
+	position: relative;
+}
+.header_menu-nav-link a {
+	font-weight: 600;
+	font-size: 14.5833px;
+	line-height: 19px;
+	color: #CACDDB;
+}
+.header_menu-nav-link::before {
+	content: '';
+	display: block;
+	height: 2px;
+	background-color: #F9F9F9;
+	position: absolute;
+	top: 23px;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+.header_menu-nav-link:hover::before {
+	width: 100%;
+}
+
+.header__menu-btn {
+	display: block;
+	box-shadow: inset 0px 4.16667px 35.4167px rgba(255, 255, 255, 0.65);
+	border-radius: 7.29167px;
+	transform: skew(-21deg);
+	width: 151.04px;
+	height: 36.46px;
+	background: radial-gradient(94.76% 100% at 50% 50%, #8A00CB 0%, #C343FF 100%);
+	padding: 9px 20px;
+	transition: 0.8s;
+
+}
+
+.header__menu-btn p {
+	transform: skew(21deg);
+	font-weight: 600;
+	font-size: 14.5833px;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+
+.section__one-container {
+	height: 545px;
+	background-image: url('bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.section__one-content {
+	height: 545px;
+	background-image: url('cards\ 4.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+background-position: center;
+}
+
+.section__one-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section__one-main-content {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 692.71px;
+}
+
+.section__one-icon {
+	height: 55px;
+	width: 55px;
+}
+
+.section__one-title {
+	margin-bottom: 16px;
+}
+
+.section__one-title h1 {
+	font-weight: 600;
+	font-size: 62.5px;
+	line-height: 140%;
+	text-align: center;
+	color: #fff;
+}
+
+.section__one-title>h1>span {
+	font-weight: 700;
+	background: radial-gradient(60.93% 536.9% at 38.57% 67.86%, #D783FF 0%, #FFFFFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.section__one-subtitle {
+	max-width: 589px;
+	font-weight: 500;
+	font-size: 18.75px;
+	line-height: 140%;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.52);
+	margin-bottom: 40px;
+}
+
+.section__one-btns {
+	display: flex;
+	justify-content: space-between;
+	width: 308px;
+	margin-bottom: 82px;
+}
+.section__one-btns-assortiment {
+	transition: 0.3s;
+	padding: 10px 13px;
+	width: 165px;
+	height: 40.62px;
+	box-shadow: inset 0px 4.16667px 35.4167px rgba(255, 255, 255, 0.65);
+	border-radius: 7.29167px;
+	background: radial-gradient(94.76% 100% at 50% 50%, #8A00CB 0%, #C343FF 100%)
+}
+
+.section__one-btns-assortiment p{
+	text-align: center;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	color: #FFF;
+}
+.crown-icon{
+	height: 16px;
+	width: 20px;
+}
+.section__one-btns-instruction:hover{
+	background: rgba(16, 12, 66, 0.6);
+	border: 1.04167px solid #fcfbfb;
+	color: #fff;
+}
+.section__one-btns-instruction {
+	width: 131px;
+	height: 41px;
+	background: rgba(24, 23, 39, 0.6);
+	border: 1.04167px solid #2B2828;
+	box-shadow: 0px 4.16667px 4.16667px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(4.16667px);
+	border-radius: 7.29px;
+	padding: 11px 9px;
+	transition: 0.3s;
+}
+
+.section__one-btns-instruction p {
+	font-weight: 600;
+	font-size: 14.5833px;
+	line-height: 19px;
+	color: #b949e2;
+	display: flex;
+	align-items: center;
+}
+
+.section__one-btns-instruction img {
+	margin-left: 5px;
+}
+
+.section__one-info {
+	background: #6B68D1;
+}
+
+.section__one-info-sections {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section__one-info-sections-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.section__one-info-sections-content-subtitle {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	width: 117px;
+	margin-left: 33px;
+	margin-right: 40px;
+}
+
+.section__one-info-sections-content-title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 140%;
+	margin-right: 31px;
+}
+
+.section__one-info-sections-content:nth-of-type(1), .section__one-info-sections-content:nth-of-type(2), .section__one-info-sections-content:nth-of-type(3){
+	border-right: 1px solid #000;
+}
+.section__one{
+	margin-bottom: 180px;
+}
+.section__two-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.section__two-title{
+	font-weight: 700;
+	font-size: 43.75px;
+	line-height: 136.5%;
+	color: #fff;
+	margin-bottom: 53px;
+}
+.section__two-card{
+	position: relative;
+	width: 273.67px;
+height: 321.8px;
+margin-bottom: 10px;
+}
+.section__two-card-info{
+	position: absolute;
+	bottom: 0;
+	width: 273.67px;
+	display: flex;
+	justify-content: space-between;
+	padding: 11px 20px;
+	background: rgba(15, 15, 15, 0.2);
+	box-shadow: 0px 4.16667px 4.16667px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(4.16667px);
+}
+.section__two-card-info-title h3{
+	font-weight: 600;
+	font-size: 13.7764px;
+	line-height: 140%;
+	color: #fff;
+}
+.section__two-card-info-price p:nth-child(2){
+	font-weight: 600;
+font-size: 13.7764px;
+line-height: 140%;
+color: rgba(255, 255, 255, 0.5);
+}
+.section__two-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1138px;
+}
+.section__two{
+	margin-bottom: 113px;
+}
+.section__three{
+	margin-bottom: 190px;
+	max-width: 100vw;
+}
+.section__three-content h3{
+	font-weight: 500;
+	font-size: 18.75px;
+	line-height: 19px;
+	color: #AD00FF;
+	text-align: center;
+	margin-bottom: 18px;
+}
+.section__three-content h2{
+	font-weight: 700;
+	font-size: 43.75px;
+	line-height: 136.5%;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 52px;
+}
+.gradientR{
+	position: absolute;
+	top: 158px;
+	left: 0;
+	z-index: 5;
+}
+.gradientL{
+	position: absolute;
+	top: 158px;
+	right: 0;
+	z-index: 5;
+}
+.section__three-container{
+	position: relative;
+}
+.slick-slider{
+	min-width: 0;
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+	min-width: 0;
+}
+.slider {
+	position: relative;
+	padding: 0px 20px;
+	margin-left: -100px;
+}
+.section__three-slider{
+	display: flex;
+	min-width: 0;
+}
+.slider__item{
+	padding: 10px;
+	
+}
+.slider__item .cardImg{
+	height: 390.62px;
+	border-radius: 20px;
+	width: 350px;
+}
+
+
+.slider-content{
+	display: flex;
+	justify-content: center;
+}
+.section__three-slider-item-text{
+	max-width: 313px;
+	margin-top: 38px;
+	position: absolute;
+	top: 0;
+}
+.section__three-slider-item-text h4{
+	font-weight: 600;
+font-size: 33.3333px;
+line-height: 136.5%;
+text-align: center;
+color: #FFFFFF;
+
+}
+.section__three-slider-item-text h5{
+	font-weight: 400;
+	font-size: 18.75px;
+	line-height: 140%;
+	text-align: center;
+	color: #FB7800;
+	margin-bottom: 13px;
+}
+
+/* card style */
+.card-btn-arrow{
+	width: 20px; 
+height: 17px;
+margin-left: 5px;
+}
+.feedbackCard .card-btn{
+	padding: 8px 20px;
+	display: inline-block;
+  transform: skew(-21deg);
+	width: 155px;
+	height: 36.46px;
+	background: #000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.feedbackCard h4{
+	margin-bottom: 208px;
+}
+.feedbackCard .card-btn p{
+	transform: skew(21deg);
+	font-weight: 600;
+	font-size: 14.5833px;
+	line-height: 19px;
+	color: #FFF;
+}
+.discordCard{
+	margin-top: 62px;
+}
+.discordCard h4{
+	margin-bottom: 185px;
+}
+.discordCard .card-btn{
+	padding: 8px 20px;
+	display: inline-block;
+  transform: skew(-21deg);
+	background: #000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.discordCard .card-btn p{
+	transform: skew(21deg);
+	font-weight: 600;
+	font-size: 14.5833px;
+	line-height: 19px;
+	color: #FFF;
+}
+.feedbackCard h5{
+	color: #14F195;
+}
+.discordCard h5{
+	color: #CE66FF;
+}
+.UIXCard h5{
+	color: #7000FF;
+}
+.payCard h5{
+	color: #2A94E1;
+}
+
+
+.section__four-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section__four-text{
+	max-width: 525px;
+}
+.section__four-text h3{
+	font-weight: 500;
+	font-size: 18.75px;
+	color: #AD00FF;
+	margin-bottom: 9px;
+}
+.section__four-title-img{
+
+	margin-top: 10px;
+	margin-right: 5px;
+}
+.section__four-title{
+	text-align: left;
+	font-weight: 700;
+	font-size: 43.75px;
+	line-height: 53px;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+}
+.section__four-list{
+	margin-bottom: 25px;
+}
+.section__four-list-item{
+	padding: 6px 8px;
+	display: flex;
+	align-items: center;
+	background: rgba(24, 23, 39, 0.6);
+	border: 1.04167px solid #2B2828;
+	box-shadow: 0px 4.16667px 4.16667px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(4.16667px);
+	border-radius: 10.4167px;
+	font-weight: 500;
+	font-size: 18.75px;
+	line-height: 19px;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+}
+.section__four-list-item img{
+	margin-right: 8px;
+}
+.section__four-btn{
+	transition: 0.3s;
+	display: inline-block;
+	background: radial-gradient(94.76% 100% at 50% 50%, #8A00CB 0%, #C343FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	box-shadow: inset 0px 4.16667px 35.4167px rgba(255, 255, 255, 0.65);
+	border-radius: 7.29167px;
+	width: 212.5px;
+	height: 46.88px;
+	padding: 14px 15px;
+}
+.section__four-btn p{
+	font-weight: 600;
+	font-size: 18.75px;
+	line-height: 19px;
+	font-feature-settings: 'liga' off;
+	color: #FFF;
+}
+.section__four{
+	margin-bottom: 195px;
+}
+.section__five-container{
+	background-image: url('bg2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+.section__five-content{
+	padding: 70px 0 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section__five-picture{
+	margin-left: -400px;
+	margin-right: 120px;
+}
+.section__five-text h3{
+	font-weight: 500;
+	font-size: 18.75px;
+	line-height: 19px;
+	color: #AD00FF;
+	margin-bottom: 12px;
+}
+.section__five-text h2{
+	font-weight: 700;
+	font-size: 43.75px;
+	line-height: 136.5%;
+	color: #FFFFFF;
+	margin-bottom: 14px;
+}
+.section__five-text p{
+	max-width: 425px;
+	font-weight: 500;
+font-size: 14.5833px;
+line-height: 140%;
+color: #fff;
+margin-bottom: 40px;
+}
+.section__five-text p>span{
+	color: rgba(255, 255, 255, 0.52);
+}
+.social-media{
+	transition: 0.3s;
+	padding: 11px 17px;
+	display: inline-block;
+	background: radial-gradient(94.76% 100% at 50% 50%, #AD00FF 0%, #BF37FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	box-shadow: inset 0px 4.16667px 35.4167px rgba(255, 255, 255, 0.65);
+	border-radius: 7.29167px;
+	font-weight: 600;
+	font-size: 16.6667px;
+	line-height: 19px;
+	color: #000000;
+
+}
+.social-media:nth-of-type(1){
+	margin-right: 12px;
+}
+.section__six-container{
+	height: 388.54px;
+	background-image: url('bg3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+.section__six-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+margin-left: -500px;
+padding-top: 68px;
+
+}
+.section__six-text{
+	color: #FFF;
+
+}
+.section__six-text h3{
+	font-weight: 500;
+	font-size: 18.75px;
+	line-height: 19px;
+	color: #AD00FF;
+	margin-bottom: 12px;
+}
+.section__six-text h2{
+	font-weight: 700;
+	font-size: 43.75px;
+	line-height: 136.5%;
+margin-bottom: 14px;
+}
+.section__six-text p{
+	max-width: 473.96px;
+	font-weight: 500;
+	font-size: 14.5833px;
+	line-height: 140%;
+	margin-bottom: 24px;
+}
+.section__six-text p>span{
+	color: rgba(255, 255, 255, 0.52);
+}
+.section__six-text h4{
+	font-weight: 500;
+font-size: 14.5833px;
+line-height: 140%;
+margin-bottom: 26px;
+}
+.section__six-text>.social-media{
+	color: #fff;
+}
+.social-media-btn{
+	transition: 0.3s;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+}
+.footer-container{
+	width: 1183.33px;
+	padding-top: 70px;
+}
+.footer-content{
+	border-top: 2px solid #1A1C23;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.footer-content p{
+	font-weight: 500;
+	font-size: 14.5833px;
+	line-height: 19px;
+	color: rgba(255, 255, 255, 0.4);
+}
+.footer-icon{
+	height: 33px;
+	width: 33px;
+}
+
+@media screen and (max-width:1388px){
+	.section__one-info-sections-content-title {
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 140%;
+		margin-right: 31px;
+		
+	}
+	.section__one-info-sections-content-subtitle{
+		margin-right: 0;
+	}
+	.header__menu{
+		margin-left: 3%;
+		margin-right: 3%;
+	} 
+}
+.openbtn{
+	display: none;
+}
+.closebtn{
+	display: none;
+}
+@media screen and (max-width:1183px){
+	.section__one-info-sections-content-title {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 140%;
+		margin-right: 25px;
+	}
+}
+@media screen and (max-width:1024px){
+	.section__two-cards{
+		max-width: 864px;
+	}
+	.slider__item .cardImg{
+		width: 300px;
+	}
+	.section__three-slider-item-text{
+		max-width: 280px;
+	}
+	.discordCard h4{
+		margin-bottom: 142px;
+	}
+	.discordCard{
+		max-width: 250px;
+	}
+	.section__four-content{
+		flex-wrap: wrap;
+	}
+	.footer-content{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+}
+@media screen and (max-width:930px){
+	.openbtn{
+		display: block;
+		box-shadow: inset 0px 4.16667px 35.4167px rgba(255, 255, 255, 0.65);
+	border-radius: 7.29167px;
+	transform: skew(-21deg);
+	width: 151.04px;
+	height: 36.46px;
+	background: radial-gradient(94.76% 100% at 50% 50%, #8A00CB 0%, #C343FF 100%);
+	padding: 9px 20px;
+	margin-right: 20px;
+	}
+	.openbtn p{
+		transform: skew(21deg);
+		font-weight: 600;
+		font-size: 14.5833px;
+		line-height: 19px;
+		color: #FFFFFF;
+	}
+	.header_menu-nav-list{
+		height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+	}
+	.header__menu-btns{
+		display: flex;
+	}
+	.section__one-title h1{
+		font-size: 50px;
+	}
+	.section__one-subtitle{
+		font-size: 16px;
+	}
+	.section__one-info-sections-content-title{
+		font-size: 18px;
+	}
+	.section__one-info-sections-content-subtitle{
+		width: auto;
+	}
+	.section__one-info-sections-content{
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.section__one-info-sections-content-subtitle{
+		margin: 0;
+	}
+	.section__one-info-sections-content-title{
+		margin: 0;
+	}
+	.section__two-cards{
+		justify-content: space-around;
+	}
+	.section__two-card{
+		width: 200px;
+		height: auto;
+	}
+	.section__two-card-img{
+		width: 260px;
+	}
+	.section__two-card-info{
+		width: auto;
+	}
+	.gradientL, .gradientR{
+		display: none;
+	}
+	.slider__item .cardImg{
+		width: 343px;
+	}
+	.section__three-slider-item-text h4{
+		font-size: 28px;
+	}
+	.section__three-slider-item-text h5{
+		font-size: 16px;
+	}
+	.discordCard h4{
+		margin-bottom: 187px;
+	}
+	.section__four{
+		margin-bottom: 50px;
+	}
+	.section__five-picture{
+		margin-right: 20px;
+	}
+	.section__five-img{
+		height: 250px;
+	}
+	.section__five-text h2{
+		font-size: 30px;
+	}
+	.section__six-content{
+		margin-left: 0;
+	}
+	.header_menu-nav-list .closebtn {
+		display: block;
+		position: absolute;
+		top: 5px;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		color: #fff;
+	}
+	.header_menu-nav-list{
+		flex-direction: column;
+		justify-content: flex-start;
+    align-items: center;
+	}
+	.header_menu-nav-link{
+		margin-bottom: 30px;
+	}
+	.section__one-info-sections-content-subtitle{
+		text-align: center;
+	}
+}
+@media screen and (max-width:885px){
+	.section__two-card-img{
+		width: 200px;
+	}
+}
+@media screen and (max-width:669px){
+	.section__one-info-sections{
+		flex-wrap: wrap;
+	}
+	.section__one-info-sections-content{
+		width: 50%;
+		padding: 5px 13px;
+		justify-content: space-between;
+		
+	}
+	.section__one-info-sections-content-subtitle{
+		max-width: 40px;
+	}
+	.section__one-info-sections-content:nth-of-type(3), .section__one-info-sections-content:nth-of-type(4){
+		border-top: 1px solid #000;
+	}
+	.section__one-info-sections-content:nth-of-type(2){
+		border-right:  none;
+	}
+	.section__one-btns{
+		margin-bottom: 60px;
+	}
+	.section__four-img{
+		width: 400px;
+	}
+}
+@media screen and (max-width:518px){
+	.section__one-title h1{
+		font-size: 42px;
+	}
+	.section__two-card, .section__two-card-img{
+		width: 190px;
+	}
+	.section__three-content h2{
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 36px;
+	}
+	.slider__item .cardImg{
+		width: 270px;
+		height: auto;
+	}
+	.feedbackCard h4{
+		margin-bottom: 130px;
+	}
+	.discordCard h4{
+		margin-bottom: 86px;
+	}
+	.discordCard {
+		margin-top: 50px;
+		max-width:230px;
+	}
+	.section__four-list-item{
+		font-size: 16px;
+	}
+	.section__four-img{
+		width: 400px;
+	}
+	.section__four-text{
+		max-width: 390px;
+	}
+	.section__four-title, .section__six-text h2{
+		font-size: 30px;
+	}
+	.social-media:nth-of-type(1){
+		margin-bottom: 10px;
+	}
+	.section__five-img{
+		height: 210px;
+	}
+	.footer-container{
+		padding-top: 40px;
+	}
+	.section__six-text{
+		max-width: 340px;
+	}
+	.footer-content p{
+		font-size: 12px;
+	}
+	.section__three, .section__two, .section__one{
+		margin-bottom: 120px;
+	}
+	.section__two-title{
+		font-size: 36px;
+		text-align: center;
+	}
+	.section__one-container{
+		background-size: auto;
+		background-position: 0;
+	}
+	.section__one-subtitle{
+		max-width: 460px;
+	}
+	.section__two-card-info{
+		padding: 11px;
+	}
+	.slider{
+		margin-left: 0;
+	}
+	.section__one-btns{
+		margin-bottom: 65px;
+	}
+}
+@media screen and (max-width:425px){
+	.section__three-slider-item-text h4{
+		font-size: 24px;
+	}
+	.section__four-text{
+		max-width: 370px;
+	}
+	.section__four-title{
+		line-height: 40px;
+	}
+	.discordCard h4{
+		margin-bottom: 120px;
+	}
+	.section__one{
+		margin-bottom: 140px;
+	}
+	.openbtn{
+		width: 125px;
+	}
+	.section__one-info{
+		margin-top: -30px;
+	}
+}
+@media screen and (max-width:400px){
+	.section__one-info-sections-content{
+		justify-content: space-between;
+		width: 300px;
+	}
+	.section__one-info-sections{
+		flex-direction: column;
+	}
+	.section__one-info-sections-content:nth-of-type(1), .section__one-info-sections-content:nth-of-type(2), .section__one-info-sections-content:nth-of-type(3), .section__one-info-sections-content:nth-of-type(4){
+		border: none;
+	}
+	.section__one-info{
+		margin-top: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-radius: 7.29167px;
+	}
+	.section__one{
+		margin-bottom: 200px;
+	}
+	.header__prescription{
+		font-size: 12px;
+	}
+	.section__one-title h1{
+		font-size: 38px;
+	}
+	.section__one-subtitle{
+		max-width: 326px;
+	}
+	.header__menu-btn{
+		width: 120px;
+		padding: 9px 12px;
+	}
+	.header__menu-btn p{
+		font-size: 12px;
+	}
+	.openbtn{
+		width: 100px;
+	}
+	.section__three-content h2{
+		font-size: 34px;
+	}
+	.slider{
+		margin-left: 0;
+	}
+	.section__four-text{
+		max-width: 350px;
+	}
+	.section__five-text{
+		max-width: 230px;
+	}
+	.section__five-text h3, .section__six-text h3{
+		font-size: 16px;
+	}
+	.section__four-title{
+		font-size: 36px;
+	}
+}
