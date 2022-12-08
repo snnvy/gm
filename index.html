@@ -11,29 +11,35 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header__prescription">
 				<p>Определенно лучшие в сфере предоставления услуг прокачки DOTA 2. Безупречная репутация — это про нас!</p>
 			</div>
 			<div class="header__menu">
 				<div class="header__menu-nav">
-					<img src="icon.png" alt="icon">
-					<ul class="header_menu-nav-list">
-						<li class="header_menu-nav-link"><a href="">Каталог</a></li>
-						<li class="header_menu-nav-link"><a href="">Преимущества</a></li>
-						<li class="header_menu-nav-link"><a href="">Поддержка</a></li>
-						<li class="header_menu-nav-link"><a href="">Поддержка</a></li>
-						<li class="header_menu-nav-link"><a href="">Контакты</a></li>
+					<img class="header-icon" src="icon.png" alt="icon">
+					<ul class="header_menu-nav-list" id="mySidebar">
+						<a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+						<li class="header_menu-nav-link"><a href="#catalog" scroll-behavior: smooth>Каталог</a></li>
+						<li class="header_menu-nav-link"><a href="#benefits">Преимущества</a></li>
+						<li class="header_menu-nav-link"><a href="#support1">Поддержка</a></li>
+						<li class="header_menu-nav-link"><a href="#support2">Поддержка</a></li>
+						<li class="header_menu-nav-link"><a href="#contacts">Контакты</a></li>
 					</ul>
+					
 				</div>
-				<a href="#" class="header__menu-btn">
+				<div class="header__menu-btns">
+					<button class="openbtn" id="opennav" ><p>&#9776;  Menu</p></button>
+				<a href="#" class="header__menu-btn hover-btn">
 					<p>К покупкам <img src="bx-cart-alt 1.png" alt="cart"></p>
 				</a>
+				</div>
+				
 			</div>
 		</div>
 	</header>
-	<main>
+	<main id="main">
 		<div class="section__one">
 			<div class="section__one-container">
 				<div class="section__one-content">
@@ -48,7 +54,7 @@
 								Dota 2!
 							</p>
 							<div class="section__one-btns">
-								<a href="" class="section__one-btns-assortiment">
+								<a href="" class="section__one-btns-assortiment hover-btn">
 									<p>Наш ассортимент</p>
 								</a>
 								<a href="" class="section__one-btns-instruction">
@@ -80,7 +86,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section__two">
+		<div class="section__two" id="catalog">
 			<div class="container">
 				<div class="section__two-content">
 					<div class="section__two-title">
@@ -247,7 +253,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section__three">
+		<div class="section__three" id="benefits">
 			<div class="section__three-container">
 				<div class="section__three-content">
 					<img class="gradientR" src="gradientR.png" alt="gradient">
@@ -279,7 +285,7 @@
 								<div class="section__three-slider-item-text feedbackCard">
 									<h5>Прозрачность</h5>
 									<h4>250+ Отзывов</h4>
-									<div class="card-btn-wrapper"></div>
+									
 									<a href="" class="card-btn"><p> Отзывы VK <img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
 								</div>
 								
@@ -291,7 +297,7 @@
 								<div class="section__three-slider-item-text discordCard">
 									<h5>Работаем при вас</h5>
 									<h4>Сервер в Discord</h4>
-									<div class="card-btn-wrapper"></div>
+									
 									<a href="" class="card-btn"><p> Перейти в  Discord<img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
 								</div>
 								<img class="cardImg" src="discordCard.png" alt="">
@@ -332,21 +338,21 @@
 							<li class="section__four-list-item"><img src="list4.png" alt="list4">Отправьте номер заявки по ссылке
 								в поп-окне.</li>
 						</ul>
-						<a class="section__four-btn" href="">
+						<a class="section__four-btn hover-btn" href="">
 							<p>Перейти к товарам</p>
 						</a>
 					</div>
 					<div class="section__four-picture">
-						<img src="img.png" alt="picture">
+						<img class="section__four-img" src="img.png" alt="picture">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section__five">
+		<div class="section__five" id="support1">
 			<div class="section__five-container">
 				<div class="section__five-content">
 					<div class="section__five-picture">
-						<img src="Group.png" alt="image">
+						<img class="section__five-img" src="Group.png" alt="image">
 					</div>
 					<div class="section__five-text">
 						<h3>РАСШИРЯЕМСЯ, РАСТЕМ, ОБНОВЛЯЕМСЯ <img src="emoji.png" alt="emoji"></h3>
@@ -354,14 +360,14 @@
 						<p><span> Cледите за</span> пополением товара, акциями, обновлениями и новостями <span>нашего магазина в
 								наших социальных сетях!</span> </p>
 						<div class="section__five-btns">
-							<a href="" class="social-media">Перейти в VK</a>
-							<a href="" class="social-media">Перейти в Discord</a>
+							<a href="" class="social-media hover-btn">Перейти в VK</a>
+							<a href="" class="social-media hover-btn">Перейти в Discord</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section__six">
+		<div class="section__six" id="support2">
 			<div class="section__six-container">
 				<div class="section__six-content">
 					<div class="section__six-text">
@@ -370,13 +376,13 @@
 						<p><span> Наша техническая поддержка</span> поможет Вам разобраться с любым вопросом <span>касаемо наших
 								услуг</span>отвечаем моментально! </p>
 						<h4><img src="bx-timer 1.png" alt="icon"> Ответ в течение 15 минут!</h4>
-						<a href="" class="social-media">Написать обращение</a>
+						<a href="" class="social-media hover-btn">Написать обращение</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	<footer class="footer">
+	<footer class="footer" id="contacts">
 		<div class="footer-container">
 			<div class="footer-content">
 				<img class="footer-icon" src="icon.png" alt="icon">
