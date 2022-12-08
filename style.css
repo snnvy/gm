@@ -96,22 +96,18 @@ body {
 	background-color: #070A11;
 	overflow-x: hidden;
 }
-.hover-btn{
-	transition: 0.8s;
-}
 .section__two-card{
 	transition: 0.6s;
 }
 .section__two-card:hover{
 	transform: scale(1.025);
-	transition: 0.4s;
+	transition: 0.6s;
 }
 .hover-btn:hover{
 	background: linear-gradient(90.08deg, #9554FF 1.65%, #8E35AD 92.63%);
 	outline: 1px solid #ffffff;
 	box-shadow: 0px 4.16667px 4.16667px rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(4.16667px);
-	transition: 0.4s;
 }
 .header__prescription {
 	background: linear-gradient(90.08deg, #9554FF 1.65%, #8E35AD 92.63%);
@@ -161,7 +157,7 @@ body {
 	height: 2px;
 	background-color: #F9F9F9;
 	position: absolute;
-	bottom: 0;
+	top: 23px;
 	width: 0%;
 	transition: all ease-in-out 250ms;
 }
@@ -179,6 +175,8 @@ body {
 	height: 36.46px;
 	background: radial-gradient(94.76% 100% at 50% 50%, #8A00CB 0%, #C343FF 100%);
 	padding: 9px 20px;
+	transition: 0.8s;
+
 }
 
 .header__menu-btn p {
@@ -261,8 +259,8 @@ background-position: center;
 	width: 308px;
 	margin-bottom: 82px;
 }
-
 .section__one-btns-assortiment {
+	transition: 0.3s;
 	padding: 10px 13px;
 	width: 165px;
 	height: 40.62px;
@@ -271,13 +269,22 @@ background-position: center;
 	background: radial-gradient(94.76% 100% at 50% 50%, #8A00CB 0%, #C343FF 100%)
 }
 
-.section__one-btns-assortiment {
+.section__one-btns-assortiment p{
+	text-align: center;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 19px;
 	color: #FFF;
 }
-
+.crown-icon{
+	height: 16px;
+	width: 20px;
+}
+.section__one-btns-instruction:hover{
+	background: rgba(16, 12, 66, 0.6);
+	border: 1.04167px solid #fcfbfb;
+	color: #fff;
+}
 .section__one-btns-instruction {
 	width: 131px;
 	height: 41px;
@@ -287,7 +294,7 @@ background-position: center;
 	backdrop-filter: blur(4.16667px);
 	border-radius: 7.29px;
 	padding: 11px 9px;
-
+	transition: 0.3s;
 }
 
 .section__one-btns-instruction p {
@@ -367,7 +374,7 @@ margin-bottom: 10px;
 	width: 273.67px;
 	display: flex;
 	justify-content: space-between;
-	padding: 11px 26px;
+	padding: 11px 20px;
 	background: rgba(15, 15, 15, 0.2);
 	box-shadow: 0px 4.16667px 4.16667px rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(4.16667px);
@@ -376,27 +383,13 @@ margin-bottom: 10px;
 	font-weight: 600;
 	font-size: 13.7764px;
 	line-height: 140%;
-	color: #FFF;
-}
-.section__two-card-info-title p{
-	font-weight: 500;
-font-size: 11.4804px;
-line-height: 140%;
-color: rgba(255, 255, 255, 0.5);
-}
-
-.section__two-card-info-price p:nth-child(1){
-	font-weight: 500;
-font-size: 11.4804px;
-line-height: 140%;
-text-align: right;
-color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 }
 .section__two-card-info-price p:nth-child(2){
 	font-weight: 600;
 font-size: 13.7764px;
 line-height: 140%;
-color: #fff;
+color: rgba(255, 255, 255, 0.5);
 }
 .section__two-cards{
 	display: flex;
@@ -606,6 +599,7 @@ margin-left: 5px;
 	margin-right: 8px;
 }
 .section__four-btn{
+	transition: 0.3s;
 	display: inline-block;
 	background: radial-gradient(94.76% 100% at 50% 50%, #8A00CB 0%, #C343FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 	box-shadow: inset 0px 4.16667px 35.4167px rgba(255, 255, 255, 0.65);
@@ -666,6 +660,7 @@ margin-bottom: 40px;
 	color: rgba(255, 255, 255, 0.52);
 }
 .social-media{
+	transition: 0.3s;
 	padding: 11px 17px;
 	display: inline-block;
 	background: radial-gradient(94.76% 100% at 50% 50%, #AD00FF 0%, #BF37FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -730,6 +725,9 @@ margin-bottom: 26px;
 }
 .section__six-text>.social-media{
 	color: #fff;
+}
+.social-media-btn{
+	transition: 0.3s;
 }
 .footer{
 	display: flex;
@@ -973,7 +971,9 @@ margin-bottom: 26px;
 		width: 190px;
 	}
 	.section__three-content h2{
-		font-size: 38px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 36px;
 	}
 	.slider__item .cardImg{
 		width: 270px;
@@ -1075,7 +1075,10 @@ margin-bottom: 26px;
 		border: none;
 	}
 	.section__one-info{
-		margin-top: -65px;
+		margin-top: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-radius: 7.29167px;
 	}
 	.section__one{
 		margin-bottom: 200px;
