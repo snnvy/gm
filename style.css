@@ -1002,6 +1002,9 @@ margin-bottom: 26px;
 	.section__one-subtitle{
 		max-width: 460px;
 	}
+	.slider{
+		margin-left: 0;
+	}
 }
 @media screen and (max-width:425px){
 	.section__three-slider-item-text h4{
