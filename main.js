@@ -5,7 +5,7 @@ $(document).ready(function(){
 		slidesToShow:4,
 		autoplay:true,
 		speed:1400,
-		autoplaySpeed:2000,
+		autoplaySpeed:1800,
 		touchThreshold: 20,
 		waitForAnimate:false,
 		variableWidth:true,
