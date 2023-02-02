@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="style.css">
 	<title>GRANDMASTER SHOP</title>
 </head>
-
 <body>
 	<header class="header" id="header">
 		<div class="container">
@@ -31,7 +30,7 @@
 				</div>
 				<div class="header__menu-btns">
 					<button class="openbtn" id="opennav" ><p>&#9776;  Меню</p></button>
-				<a href="#" class="header__menu-btn hover-btn">
+				<a href="#catalog" class="header__menu-btn hover-btn">
 					<p>К покупкам <img src="bx-cart-alt 1.png" alt="cart"></p>
 				</a>
 				</div>
@@ -70,8 +69,8 @@
 								<p class="section__one-info-sections-content-title">250+</p>
 							</div>
 							<div class="section__one-info-sections-content">
-								<p class="section__one-info-sections-content-subtitle">Негативных отзывов</p>
-								<p class="section__one-info-sections-content-title">Ни одного</p>
+								<p class="section__one-info-sections-content-subtitle">Количество игроков</p>
+								<p class="section__one-info-sections-content-title">50+</p>
 							</div>
 							<div class="section__one-info-sections-content">
 								<p class="section__one-info-sections-content-subtitle">Выполнено заказов</p>
@@ -87,248 +86,274 @@
 			</div>
 		</div>
 		<div class="section__modals">
-			<div class="modal">
+			<div class="modal" id="modal1">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn" id="close1">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="1.png" alt="item-img">
 							<div class="modal-product-info">
 								<p>Товар</p>
 								<h2>Прокачка героя до 6-го уровня</h2>
-								<p class="product-price">650₽</p>
+								<p class="product-price">299-890₽</p>
 							</div>
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Ваш герой</label>
-							<input  type='text' id="input-form" class="input-form" name="hero" >
+							<input required type='text' id="input-form" class="input-form" name="hero">
 							<label>Текущий уровень</label>
-							<input  type='text' id="input-form" class="input-form" name="current_level">
-							<label>Желаемый</label>
-							<input placeholder="От 1 до 6" type='text' class="input-form" name="desired_level">
+							<input required type='text' id="input-form" class="input-form" name="current_level">
+							<label>Желаемый уровень</label>
+							<input required type='text' id="input-form" class="input-form" name="desired_level">
+							<label>Ваша порядочность</label>
+							<input required type='text' class="input-form" name="decency">
+							<label>Ваш рейтинг</label>
+							<input required type='text' class="input-form" name="desired_rating">
 
 							<input type='hidden' name='name' value='Прокачка героя до 6-го уровня'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='299-890'>
 							<input type='hidden' name='number' value='1'>
 							<input type='hidden' name='type' value='1'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">299-890₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal2">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="2.png" alt="item-img">
 							<div class="modal-product-info">
 								<p>Товар</p>
 								<h2>Прокачка героя до 12-го уровня</h2>
-								<p class="product-price">650₽</p>
+								<p class="product-price">399-1990₽</p>
 							</div>
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Ваш герой</label>
-							<input  type='text' id="input-form" class="input-form" name="hero" >
+							<input required type='text' id="input-form" class="input-form" name="hero">
 							<label>Текущий уровень</label>
-							<input  type='text' id="input-form" class="input-form" name="current_level">
-							<label>Желаемый</label>
-							<input placeholder="От 6 до 12" type='text' class="input-form" name="desired_level">
+							<input required type='text' id="input-form" class="input-form" name="current_level">
+							<label>Желаемый уровень</label>
+							<input required type='text' id="input-form" class="input-form" name="desired_level">
+							<label>Ваша порядочность</label>
+							<input required type='text' class="input-form" name="decency">
+							<label>Ваш рейтинг</label>
+							<input required type='text' class="input-form" name="desired_rating">
 
 							<input type='hidden' name='name' value='Прокачка героя до 12-го уровня'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='399-1990'>
 							<input type='hidden' name='number' value='2'>
 							<input type='hidden' name='type' value='1'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">399-1990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal3">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="3.png" alt="item-img">
 							<div class="modal-product-info">
 								<p>Товар</p>
 								<h2>Прокачка героя до 18-го уровня</h2>
-								<p class="product-price">650₽</p>
+								<p class="product-price">499-4990₽</p>
 							</div>
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Ваш герой</label>
-							<input  type='text' id="input-form" class="input-form" name="hero" >
+							<input required type='text' id="input-form" class="input-form" name="hero">
 							<label>Текущий уровень</label>
-							<input  type='text' id="input-form" class="input-form" name="current_level">
-							<label>Желаемый</label>
-							<input placeholder="От 12 до 18" type='text' class="input-form" name="desired_level">
+							<input required type='text' id="input-form" class="input-form" name="current_level">
+							<label>Желаемый уровень</label>
+							<input required type='text' id="input-form" class="input-form" name="desired_level">
+							<label>Ваша порядочность</label>
+							<input required type='text' class="input-form" name="decency">
+							<label>Ваш рейтинг</label>
+							<input required type='text' class="input-form" name="desired_rating">
 
 							<input type='hidden' name='name' value='Прокачка героя до 18-го уровня'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='499-4990'>
 							<input type='hidden' name='number' value='3'>
 							<input type='hidden' name='type' value='1'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">499-4990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal4">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="4.png" alt="item-img">
 							<div class="modal-product-info">
 								<p>Товар</p>
 								<h2>Прокачка героя до 25-го уровня</h2>
-								<p class="product-price">650₽</p>
+								<p class="product-price">799-7990₽</p>
 							</div>
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Ваш герой</label>
-							<input  type='text' id="input-form" class="input-form" name="hero" >
+							<input required type='text' id="input-form" class="input-form" name="hero">
 							<label>Текущий уровень</label>
-							<input  type='text' id="input-form" class="input-form" name="current_level">
-							<label>Желаемый</label>
-							<input placeholder="От 18 до 25" type='text' class="input-form" name="desired_level">
+							<input required type='text' id="input-form" class="input-form" name="current_level">
+							<label>Желаемый уровень</label>
+							<input required type='text' id="input-form" class="input-form" name="desired_level">
+							<label>Ваша порядочность</label>
+							<input required type='text' class="input-form" name="decency">
+							<label>Ваш рейтинг</label>
+							<input required type='text' class="input-form" name="desired_rating">
 
 							<input type='hidden' name='name' value='Прокачка героя до 25-го уровня'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='799-7990'>
 							<input type='hidden' name='number' value='4'>
 							<input type='hidden' name='type' value='1'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">799-7990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal5">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="5.png" alt="item-img">
 							<div class="modal-product-info">
 								<p>Товар</p>
 								<h2>Прокачка героя до 30-го уровня</h2>
-								<p class="product-price">650₽</p>
+								<p class="product-price">999-12990₽</p>
 							</div>
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Ваш герой</label>
-							<input  type='text' id="input-form" class="input-form" name="hero" >
+							<input required type='text' id="input-form" class="input-form" name="hero">
 							<label>Текущий уровень</label>
-							<input  type='text' id="input-form" class="input-form" name="current_level">
-							<label>Желаемый</label>
-							<input placeholder="От 25 до 30" type='text' class="input-form" name="desired_level">
+							<input required type='text' id="input-form" class="input-form" name="current_level">
+							<label>Желаемый уровень</label>
+							<input required type='text' id="input-form" class="input-form" name="desired_level">
+							<label>Ваша порядочность</label>
+							<input required type='text' class="input-form" name="decency">
+							<label>Ваш рейтинг</label>
+							<input required type='text' class="input-form" name="desired_rating">
 
 							<input type='hidden' name='name' value='Прокачка героя до 30-го уровня'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='999-12990'>
 							<input type='hidden' name='number' value='5'>
 							<input type='hidden' name='type' value='1'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">999-12990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal6">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="6.png" alt="item-img">
 							<div class="modal-product-info">
 								<p>Товар</p>
 								<h2>Стрик побед на герое</h2>
-								<p class="product-price">490-2990₽</p>
+								<p class="product-price">490-3990₽</p>
 							</div>
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Ваш герой</label>
-							<input  type='text' id="input-form" class="input-form" name="hero" >
-							<label>Текущий уровень</label>
-							<input  type='text' id="input-form" class="input-form" name="current_level">
-							<label>Желаемый</label>
-							<input  type='text' class="input-form" name="desired_level">
+							<input required type='text' id="input-form" class="input-form" name="hero" >
+							<label>Сколько побед</label>
+							<input required type='text' id="input-form" class="input-form" name="current_level">
+							<label>Какой у вас MMR?</label>
+							<input required type='text' class="input-form" name="desired_level">
+							<label>Ваша порядочность</label>
+							<input required type='text' class="input-form" name="decency">
 
 							<input type='hidden' name='name' value='Стрик побед на герое'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='490-3990'>
 							<input type='hidden' name='number' value='6'>
 							<input type='hidden' name='type' value='1'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">490-3990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal7">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="7.png" alt="item-img">
 							<div class="modal-product-info">
 								<p>Товар</p>
 								<h2>Прохождение катакомб</h2>
-								<p class="product-price">490-2990₽</p>
+								<p class="product-price">399-2990₽</p>
 							</div>
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Кол-во этажей</label>
-							<input  type='text' id="input-form" class="input-form" name="floors" >
+							<input required type='text' id="input-form" class="input-form" name="floors" >
 							<label>Стези</label>
-							<input  type='text' id="input-form" class="input-form" name="stazy">
+							<input required type='text' id="input-form" class="input-form" name="stazy">
 							<label>Текущий прогрес</label>
-							<input placeholder="Вставьте ссылку на скриншот (imgur.com)"  type='text' class="input-form" name="current_progress">
+							<input required placeholder="Вставьте ссылку на скриншот (imgur.com)"  type='text' class="input-form" name="current_progress">
+							<label>Ваша порядочность</label>
+							<input required type='text' class="input-form" name="decency">
+							<label>Ваш рейтинг</label>
+							<input required type='text' class="input-form" name="desired_rating">
 
 							<input type='hidden' name='name' value='Прохождение катакомб'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='399-2990'>
 							<input type='hidden' name='number' value='7'>
 							<input type='hidden' name='type' value='2'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">399-2990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal8">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="8.png" alt="item-img">
@@ -340,29 +365,29 @@
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Текущий рейтинг</label>
-							<input  type='text' id="input-form" class="input-form" name="current_rating" >
+							<input required type='text' id="input-form" class="input-form" name="current_rating" >
 							<label>Нужный рейтинг</label>
-							<input  type='text' id="input-form" class="input-form" name="desired_rating">
+							<input required type='text' id="input-form" class="input-form" name="desired_rating">
 							<label>Порядочность</label>
-							<input   type='text' class="input-form" name="decency">
+							<input required  type='text' class="input-form" name="decency">
 
 							<input type='hidden' name='name' value='Поднятие MMR'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='490-3990'>
 							<input type='hidden' name='number' value='8'>
 							<input type='hidden' name='type' value='3'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">490-3990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal9">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="9.png" alt="item-img">
@@ -374,29 +399,31 @@
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Выбрать аркану</label>
-							<input  type='text' id="input-form" class="input-form" name="choose_lasso" >
+							<input required type='text' id="input-form" class="input-form" name="choose_lasso" >
 							<label>Текущий прогрес</label>
-							<input  type='text' id="input-form" class="input-form" name="current_progress">
+							<input required type='text' id="input-form" class="input-form" name="current_progress">
 							<label>Порядочность</label>
-							<input   type='text' class="input-form" name="decency">
+							<input required  type='text' class="input-form" name="decency">
+							<label>Ваш рейтинг</label>
+							<input required  type='text' class="input-form" name="current_rating">
 
 							<input type='hidden' name='name' value='Прокачка арканы'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='490-3990'>
 							<input type='hidden' name='number' value='9'>
 							<input type='hidden' name='type' value='4'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">490-3990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal10">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="10.png" alt="item-img">
@@ -408,27 +435,27 @@
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Рейтинг до калибровки</label>
-							<input  type='text' id="input-form" class="input-form" name="rating_before" >
-							<label>Звание божества до калибровки</label>
-							<input  type='text' id="input-form" class="input-form" name="rank_before">
+							<input required type='text' id="input-form" class="input-form" name="rating_before" >
+							<label>Какая порядочность?</label>
+							<input required type='text' id="input-form" class="input-form" name="rank_before">
 
 							<input type='hidden' name='name' value='Калибровка MMR'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='990'>
 							<input type='hidden' name='number' value='10'>
 							<input type='hidden' name='type' value='5'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">990₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal11">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="11.png" alt="item-img">
@@ -440,29 +467,29 @@
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Укажите MMR</label>
-							<input  type='text' id="input-form" class="input-form" name="mmr" >
+							<input required type='text' id="input-form" class="input-form" name="mmr" >
 							<label>Укажите позицию</label>
-							<input  type='text' id="input-form" class="input-form" name="position">
+							<input required type='text' id="input-form" class="input-form" name="position">
 							<label>Нужен ли Live просмотр</label>
-							<input   type='text' class="input-form" name="live">
+							<input required  type='text' class="input-form" name="live">
 
 							<input type='hidden' name='name' value='Тренировка позиции'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='399'>
 							<input type='hidden' name='number' value='11'>
 							<input type='hidden' name='type' value='6'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">399₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="modal12">
 				<div class="modal-bg">
 					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
+						<a href="##" class="modal-closebtn">&times;</a>
 						<h3>Данные заявки</h3>
 						<div class="modal-product">
 							<img class="modal-img" src="12.png" alt="item-img">
@@ -474,46 +501,26 @@
 						</div>
 						<form class="modal-form" action='handler.php' method='POST'>
 							<label>Укажите MMR</label>
-							<input  type='text' id="input-form" class="input-form" name="mmr" >
+							<input required type='text' id="input-form" class="input-form" name="mmr" >
 							<label>Укажите героя</label>
-							<input  type='text' id="input-form" class="input-form" name=" hero">
-							<label>Нужен ли онлайн просмотр игры </label>
-							<input   type='text' class="input-form" name="live">
+							<input required type='text' id="input-form" class="input-form" name="hero">
+							<label>Нужен ли Live просмотр игры </label>
+							<input required  type='text' class="input-form" name="live">
 
 							<input type='hidden' name='name' value='Тренировка героя'>
-							<input type='hidden' name='price' value='650'>
+							<input type='hidden' name='price' value='399'>
 							<input type='hidden' name='number' value='12'>
 							<input type='hidden' name='type' value='7'>
 							<div class="modal-amount">
 								<h5>Стоимость</h5>
-								<p class="amount-total">650₽</p>
+								<p class="amount-total">399₽</p>
 							</div>
-							<button name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
+							<button type='submit' name='product_button' class="modal-sumbit">Оформить заявку на покупку</button>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal modal__order-info">
-				<div class="modal-bg">
-					<div class="modal-container">
-						<a href="" class="modal-closebtn">&times;</a>
-						<h3>Оформление покупки</h3>
-						<h2>Номер заявки</h2>
-						<div class="order-nmb">#5&nbsp;503</div>
-						<div class="order-info-links">
-							<a href=""><img class="order-icon" src="vk.png" alt="Vk-icon"></a>
-							<a href=""><img class="order-icon" src="telegram.png" alt="Tg-icon"></a>
-							
-						</div>
-						<p class="order-text">Для продолжения <span>и</span> оценки Вашей заявки - напишите менеджеру <span>с ее номером!</span></p>
-						<div class="order-btns">
-							<a href="" class="order-btn">Оформить заявку<img class="order-btn-icon" src="vkIcon.png" alt="Vk-icon"></a>
-							<a href="" class="order-btn">Оформить заявку<img class="order-btn-icon" src="TgIcon.png" alt="Tg-icon"></a>
-						</div>
 					</div>
-				</div>
-			</div>
-		</div>
 		<div class="section__two" id="catalog">
 			<div class="container">
 				<div class="section__two-content">
@@ -522,7 +529,7 @@
 					</div>
 					<div class="section__two-cards">
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="1.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" src="1.png" alt="bg" data-target="modal1">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПРОКАЧКА ГЕРОЯ ДО 6-ГО УРОВНЯ</h3>
@@ -535,7 +542,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="2.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal2" src="2.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПРОКАЧКА ГЕРОЯ ДО 12-ГО УРОВНЯ</h3>
@@ -548,7 +555,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="3.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal3" src="3.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПРОКАЧКА ГЕРОЯ ДО 18-ГО УРОВНЯ</h3>
@@ -561,7 +568,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="4.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal4" src="4.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПРОКАЧКА ГЕРОЯ ДО 25-ГО УРОВНЯ</h3>
@@ -574,7 +581,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="5.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal5" src="5.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПРОКАЧКА ГЕРОЯ ДО 30-ГО УРОВНЯ</h3>
@@ -582,12 +589,12 @@
 								</div>
 								<div class="section__two-card-info-price">
 									<p>&nbsp;</p>
-									<p>999₽-11&nbsp;590₽</p>
+									<p>999₽-12&nbsp;990₽</p>
 								</div>
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="6.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal6" src="6.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>СТРИК ПОБЕД НА ГЕРОЕ</h3>
@@ -600,7 +607,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="7.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal7" src="7.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПРОХОЖДЕНИЕ КАТАКОМБ</h3>
@@ -613,7 +620,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="8.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal8" src="8.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПОДНЯТИЕ MMR</h3>
@@ -621,12 +628,12 @@
 								</div>
 								<div class="section__two-card-info-price">
 									<p>&nbsp;</p>
-									<p>299₽-3&nbsp;549₽</p>
+									<p>490₽-3&nbsp;990₽</p>
 								</div>
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="9.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal9" src="9.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ПРОКАЧКА АРКАНЫ</h3>
@@ -634,12 +641,12 @@
 								</div>
 								<div class="section__two-card-info-price">
 									<p>&nbsp;</p>
-									<p>490₽-2&nbsp;990₽</p>
+									<p>490₽-3&nbsp;990₽</p>
 								</div>
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="10.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal10" src="10.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>КАЛИБРОВКА MMR</h3>
@@ -652,7 +659,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="11.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal11" src="11.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ТРЕНИРОВКА ПОЗИЦИИ</h3>
@@ -665,7 +672,7 @@
 							</div>
 						</div>
 						<div class="section__two-card">
-							<img class="section__two-card-img" src="12.png" alt="bg">
+							<img class="section__two-card-img modal_toggler" data-target="modal12" src="12.png" alt="bg">
 							<div class="section__two-card-info">
 								<div class="section__two-card-info-title">
 									<h3>ТРЕНИРОВКА ГЕРОЯ</h3>
@@ -714,7 +721,7 @@
 									<h5>Прозрачность</h5>
 									<h4>250+ Отзывов</h4>
 									
-									<a href="" class="card-btn"><p> Отзывы VK <img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
+									<a href="#" class="card-btn"><p> Отзывы VK <img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
 								</div>
 								
 								<img class="cardImg" src="feedbackCard.png" alt="">
@@ -726,7 +733,7 @@
 									<h5>Работаем при вас</h5>
 									<h4>Сервер в Discord</h4>
 									
-									<a href="" class="card-btn"><p> Перейти в  Discord<img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
+									<a href="#" class="card-btn"><p> Перейти в  Discord<img class="card-btn-arrow" src="whiteArrow.png" alt="arrow"></p></a>
 								</div>
 								<img class="cardImg" src="discordCard.png" alt="">
 								</div>
@@ -785,11 +792,11 @@
 					<div class="section__five-text">
 						<h3>РАСШИРЯЕМСЯ, РАСТЕМ, ОБНОВЛЯЕМСЯ <img src="emoji.png" alt="emoji"></h3>
 						<h2>Постоянное развитие</h2>
-						<p><span> Cледите за</span> пополением товара, акциями, обновлениями и новостями <span>нашего магазина в
+						<p><span> Cледите за</span> пополнением товара, акциями, обновлениями и новостями <span>нашего магазина в
 								наших социальных сетях!</span> </p>
 						<div class="section__five-btns">
-							<a href="" class="social-media hover-btn">Перейти в VK</a>
-							<a href="" class="social-media hover-btn">Перейти в Discord</a>
+							<a href="#" class="social-media hover-btn">Перейти в VK</a>
+							<a href="#" class="social-media hover-btn">Перейти в Discord</a>
 						</div>
 					</div>
 				</div>
@@ -804,7 +811,7 @@
 						<p><span> Наша техническая поддержка</span> поможет Вам разобраться с любым вопросом <span>касаемо наших
 								услуг</span>отвечаем моментально! </p>
 						<h4><img src="bx-timer 1.png" alt="icon"> Ответ в течение 15 минут!</h4>
-						<a href="" class="social-media hover-btn social-media-btn">Написать обращение</a>
+						<a href="#" class="social-media hover-btn social-media-btn">Написать обращение</a>
 					</div>
 				</div>
 			</div>
@@ -816,9 +823,9 @@
 				<img class="footer-icon" src="icon.png" alt="icon">
 				<p>©2022 GM Shop, All Rights Reserved.</p>
 				<div class="footer-content-btns">
-					<a href=""><img src="bxl-vk 1.png" alt="vk"></a>
-					<a href=""><img src="bxl-discord-alt 1.png" alt="discord"></a>
-					<a href=""><img src="bxl-telegram 1.png" alt="telegram"></a>
+					<a href="#"><img src="bxl-vk 1.png" alt="vk"></a>
+					<a href="#"><img src="bxl-discord-alt 1.png" alt="discord"></a>
+					<a href="#"><img src="bxl-telegram 1.png" alt="telegram"></a>
 				</div>
 			</div>
 		</div>
@@ -827,6 +834,29 @@
 	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
 	<script src="slick.min.js"></script>
 	<script src="main.js"></script>
+	<script>
+		function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.section__one-title');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+Array.from(document.getElementsByTagName('form')).forEach(form =>  {
+    form.addEventListener("submit", function(event){ 
+          event.target.querySelector('button[type=submit]').setAttribute('disabled', 'disabled');
+    })
+})
+	</script>	
 </body>
 
 </html>
